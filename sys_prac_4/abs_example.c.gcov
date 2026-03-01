@@ -1,0 +1,24 @@
+        -:    0:Source:abs_example.c
+        -:    0:Graph:abs_example.gcno
+        -:    0:Data:abs_example.gcda
+        -:    0:Runs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+        2:    3:int absolute(int x) {
+        2:    4:    if (x >= 0)
+        1:    5:        return x;
+        -:    6:    else
+        1:    7:        return -x;
+        -:    8:}
+        -:    9:
+        1:   10:int main() {
+        1:   11:    int number = 42;  
+        1:   12:    int result = absolute(number);
+        1:   13:    int number1 = -42;  
+        1:   14:    int result1 = absolute(number1);
+        -:   15:    
+        1:   16:    printf("Абсолютное значение числа %d равно %d\n", number, result);
+        1:   17:    printf("Абсолютное значение числа %d равно %d\n", number1, result1);
+        -:   18:    
+        1:   19:    return 0;
+        -:   20:}

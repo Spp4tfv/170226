@@ -1,0 +1,25 @@
+
+  656  cd sys_prac_4
+  657  gcc hello.c -o hellop
+  658  gcc hello.c -o hello
+  659  valgrind ./hello
+  660  touch leak.c
+  661  gcc leak.c -o leak
+  662  valgrind ./leak
+  663  gcc leak.c -o leak
+  664  valgrind ./leak
+  665  touch overflow.c
+  666  gcc overflow.c -o overflow
+  667  valgrind ./overflow
+  668  gcc overflow.c -o overflow
+  669  valgrind ./overflow
+  670  gcc overflow.c -o overflow
+  671  valgrind ./overflow
+  672  touch abs_example.c
+  673  gcc --coverage abs_example.c -o abs_example
+  674  ./abs_example
+  675  gcov abs_example.c
+  676  gcc --coverage abs_example.c -o abs_example
+  677  ./abs_example
+  678  gcov abs_example.c
+  679  touch history.txt
